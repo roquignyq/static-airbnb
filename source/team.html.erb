@@ -1,17 +1,17 @@
 <div class="text-center">
-  <h1>Our team of 3 members</h1>
-  <ul class="list-inline">
-    <li>
-      <h2>Paul</h2>
-      <img src="http://placehold.it/100" alt="">
-    </li>
-    <li>
-      <h2>George</h2>
-      <img src="http://placehold.it/100" alt="">
-    </li>
-    <li>
-      <h2>Ringo</h2>
-      <img src="http://placehold.it/100" alt="">
-    </li>
+  <h1>Our team</h1>
+  <ul class="list-inline text-center">
+    <% ["anne", "seb", "romain"].each do |member| %>
+      <li>
+        <%= image_tag "#{member}.png", class: "img-circle img-team" %>
+        <h3><%= member.capitalize %></h3>
+      </li>
+    <% end %>
   </ul>
+  <% link_to "#", class:"team-link-mail" do %>
+    <i class="fa fa-envelope" aria-hidden="true"></i> contact@team.com
+  <% end %>
 </div>
+
+
+

@@ -21,22 +21,22 @@ title: Le Wagon Middleman boilerplate
     <div class="container text-center padded features">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="images/globe.png" alt="">
+          <%= image_tag "globe.png", class: "", alt:"" %>
           <h2>Discover the world</h2>
           <p>The earth is your new home.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="images/dollar.png" alt="">
+          <%= image_tag "dollar.png", class: "", alt:"" %>
           <h2>Pay online</h2>
           <p>No cash issues anymore.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="images/beer.png" alt="">
+          <%= image_tag "beer.png", class: "", alt:"" %>
           <h2>Meet people</h2>
           <p>Discover new culture and lifestyle.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="images/heart.png" alt="">
+          <%= image_tag "heart.png", class: "", alt:"" %>
           <h2>Share and love</h2>
           <p>Join a community you will love.</p>
         </div>
@@ -47,36 +47,36 @@ title: Le Wagon Middleman boilerplate
         <h2 class="text-center">Your next trip</h2>
         <div class="row">
           <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path('card-paris.jpg') %>);">
               <div class="card-category">Paris</div>
               <div class="card-description">
                 <h2>Seb's home</h2>
                 <p>Charming room with patio</p>
               </div>
-              <img class="card-user avatar avatar-large" src="images/seb.jpg">
-              <a class="card-link" href="#" ></a>
+              <%= image_tag "seb.jpg", class: "card-user avatar avatar-large", alt:"" %>
+              <%= link_to "#", "#", class: "card-link" %>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path('card-brussels.jpeg') %>);">
               <div class="card-category">Brussels</div>
               <div class="card-description">
                 <h2>Anne's home</h2>
                 <p>Lovely house</p>
               </div>
-              <img class="card-user avatar avatar-large" src="images/anne.jpg">
-              <a class="card-link" href="#" ></a>
+              <%= image_tag "anne.jpg", class: "card-user avatar avatar-large", alt:"" %>
+              <%= link_to "#", "#", class: "card-link" %>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path('card-london.jpeg') %>);">
               <div class="card-category">London</div>
               <div class="card-description">
                 <h2>Romain's home</h2>
                 <p>Nice flat in Piccadilly</p>
               </div>
-              <img class="card-user avatar avatar-large" src="images/romain.jpeg">
-              <a class="card-link" href="#" ></a>
+              <%= image_tag "romain.jpeg", class: "card-user avatar avatar-large", alt:"" %>
+              <%= link_to "#", "#", class: "card-link" %>
             </div>
           </div>
         </div>
